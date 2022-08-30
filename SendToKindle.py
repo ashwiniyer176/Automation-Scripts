@@ -36,7 +36,7 @@ if __name__ == "__main__":
     SENDER = os.environ["GMAIL_ID"]
     SENDER_PASSWORD = os.environ["GMAIL_APP_PASSWORD"]
     RECEIVER = os.environ["KINDLE_EMAIL_ID"]
-    ATTACHMENT = "books/The Pragmatic Programmer Your Journey to Mastery, 20th Anniversary Edition by Andrew Hunt David Hurst Thomas (z-lib.org).pdf.mobi"
+    ATTACHMENT = "books\The Checklist Manifesto How to Get Things Right by Gawande Atul (z-lib.org).mobi"
     session = smtplib.SMTP("smtp.gmail.com", 587)
     message = setup_message(SENDER, RECEIVER, ATTACHMENT)
     text = message.as_string()
